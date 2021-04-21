@@ -5,22 +5,36 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Hexo</title>
+  <link rel="dns-prefetch" href="http://nealLi.gitee.io">
+  <title>hexo搭建和yilia主题配置 | 博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="安装hexo准备环境下载git和nodejs，nodejs和git安装都比较简单，如果不成功，百度有很多教程。 安装完nodejs后通过node -v和npm -v这两个命令就是查看版本信息">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/04/01/hello-world/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-01T12:04:44.366Z">
-<meta property="article:modified_time" content="2021-04-01T17:11:28.689Z">
-<meta property="article:author" content="John Doe">
+<meta property="og:title" content="hexo搭建和yilia主题配置">
+<meta property="og:url" content="http://nealli.gitee.io/2021/04/21/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="博客">
+<meta property="og:description" content="安装hexo准备环境下载git和nodejs，nodejs和git安装都比较简单，如果不成功，百度有很多教程。 安装完nodejs后通过node -v和npm -v这两个命令就是查看版本信息">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/1.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/2.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/3.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/4.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/5.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/6.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/7.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/8.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/9.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/10.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/11.png">
+<meta property="og:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/12.png">
+<meta property="article:published_time" content="2021-04-21T15:24:37.365Z">
+<meta property="article:modified_time" content="2021-04-21T15:24:37.365Z">
+<meta property="article:author" content="LiQiuYu">
+<meta property="article:tag" content="hexo博客">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/1.png">
   
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -47,7 +61,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/img/header.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -58,8 +72,6 @@
 			<ul>
 			
 				<li><a href="/">主页</a></li>
-	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -109,13 +121,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/EagleLiDN" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="qq" target="_blank" href="/930043240" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="/930043240@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -133,7 +143,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/img/header.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -143,20 +153,16 @@
 			
 				
 			
-				
-			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/EagleLiDN" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="qq" target="_blank" href="/930043240" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="/930043240@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -165,9 +171,7 @@
 				<ul style="width: 50%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
-		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 100%"><a href="/">主页</a></li>
 		        
 				</ul>
 			</nav>
@@ -182,20 +186,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hexo搭建和yilia主题配置" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Hello World
+      hexo搭建和yilia主题配置
     </h1>
   
 
         
-        <a href="/2021/04/01/hello-world/" class="archive-article-date">
-  	<time datetime="2021-04-01T12:04:44.366Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-01</time>
+        <a href="/2021/04/21/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/" class="archive-article-date">
+  	<time datetime="2021-04-21T15:24:37.365Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-21</time>
 </a>
 
 
@@ -210,7 +214,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">75字</span>
+        <span class="post-count">3.9k字</span>
       </span>
     </span>
 
@@ -219,7 +223,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">1分</span>
+        <span class="post-count">20分</span>
       </span>
     </span>
 </div>
@@ -229,19 +233,132 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post  &quot;</span></span><br></pre></td></tr></table></figure>
+        <h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><h3 id="准备环境"><a href="#准备环境" class="headerlink" title="准备环境"></a>准备环境</h3><p>下载<a target="_blank" rel="noopener" href="https://git-scm.com/download/">git</a>和<a target="_blank" rel="noopener" href="http://nodejs.cn/download/">nodejs</a>，nodejs和git安装都比较简单，如果不成功，百度有很多教程。</p>
+<p>安装完nodejs后通过<code>node -v</code>和<code>npm -v</code>这两个命令就是查看版本信息</p>
+<span id="more"></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>安装完git后检查是否安装成功的操作是，鼠标右键出现下图效果<br><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/1.png" alt="image"></p>
+<h3 id="安装hexo基本框架"><a href="#安装hexo基本框架" class="headerlink" title="安装hexo基本框架"></a>安装hexo基本框架</h3><p>在合适的盘符创建一个博客的根路径（最好都是英文，否则不知道出什么幺蛾子），进入新建的文件夹后，鼠标右键点击<code>Git Bash Here</code><br><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/2.png" alt="image"></p>
+<p>在<code>git bash</code>窗口依次输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;第一条   这是安装hexo的基础框架（执行后当前目录不会有东西）</span><br><span class="line">npm install -g hexo</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;第二条   这是初始化hexo框架 这个可能会比较慢</span><br><span class="line">hexo init</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;第三条 安装所需要的组件</span><br><span class="line">npm install</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;第四条 编译生成静态页面</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;第五条 启动本地服务</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/3.png" alt="image"></p>
+<p>访问<code>http://localhost:4000</code><br><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/4.png" alt="image"></p>
+<h2 id="通过ssh提交hexo博客到gitee和github"><a href="#通过ssh提交hexo博客到gitee和github" class="headerlink" title="通过ssh提交hexo博客到gitee和github"></a>通过ssh提交hexo博客到gitee和github</h2><p>在gitee和github上创建仓库（一般默认都使用master分支，提交的时候branch设置也是master分支），仓库名称和用户名相同</p>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/5.png" alt="image"></p>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/6.png" alt="image"></p>
+<p>hexo安装git插件，在根路径打开CMD窗口，执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>在根路径的_config.yml设置提交信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: </span><br><span class="line">    github: git@github.com:EagleLiDN&#x2F;EagleLiDN.github.io.git</span><br><span class="line">    gitee: git@gitee.com:nealLi&#x2F;nealLi.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>根路径下打开<code>git bash</code>，根据邮箱生成ssh的key</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;9300xxxx0@qq.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>查看公钥内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd ~&#x2F;.ssh</span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>将ssh秘钥添加到gitee/github对应的仓库上</p>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/7.png" alt="image"></p>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/8.png" alt="image"></p>
+<p>执行<code>hexo d</code>可以看到提交成功</p>
+<h2 id="修改主题为yilia"><a href="#修改主题为yilia" class="headerlink" title="修改主题为yilia"></a>修改主题为yilia</h2><p>安装</p>
+<p>在博客根路径下右键git bash，输入下面命令，克隆yilia到themes下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia.git themes&#x2F;yilia</span><br></pre></td></tr></table></figure>
+
+<p>配置</p>
+<p>修改hexo根目录下的 _config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: yilia</span><br></pre></td></tr></table></figure>
+
+<p>在根路径下打开CMD窗口</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 清理</span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;构建</span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;启动服务</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>可以看到新的样式<br><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/9.png" alt="image"></p>
+<h2 id="修改liyia主题的内容"><a href="#修改liyia主题的内容" class="headerlink" title="修改liyia主题的内容"></a>修改liyia主题的内容</h2><h3 id="修改所有文章查询"><a href="#修改所有文章查询" class="headerlink" title="修改所有文章查询"></a>修改所有文章查询</h3><p>在根路径下的_config.yml下，配置下面内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">jsonContent:</span><br><span class="line">    meta: false</span><br><span class="line">    pages: false</span><br><span class="line">    posts:</span><br><span class="line">      title: true</span><br><span class="line">      date: true</span><br><span class="line">      path: true</span><br><span class="line">      text: false</span><br><span class="line">      raw: false</span><br><span class="line">      content: false</span><br><span class="line">      slug: false</span><br><span class="line">      updated: false</span><br><span class="line">      comments: false</span><br><span class="line">      link: false</span><br><span class="line">      permalink: false</span><br><span class="line">      excerpt: false</span><br><span class="line">      categories: false</span><br><span class="line">      tags: true</span><br></pre></td></tr></table></figure>
+
+<p>在根路径下启动CMD窗口，输入下面命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-json-content --save</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加头像，赞赏二维码"><a href="#添加头像，赞赏二维码" class="headerlink" title="添加头像，赞赏二维码"></a>添加头像，赞赏二维码</h3><h3 id="安装站内搜索"><a href="#安装站内搜索" class="headerlink" title="安装站内搜索"></a>安装站内搜索</h3><p>在根路径下启动CMD窗口，输入下面命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-generator-search</span><br></pre></td></tr></table></figure>
+
+<p>修改根路径下的_config.yml</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: all</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/source下创建search.js文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br></pre></td><td class="code"><pre><span class="line">var searchFunc &#x3D; function(path, search_id, content_id) &#123;</span><br><span class="line">    &#39;use strict&#39;;</span><br><span class="line">    $.ajax(&#123;</span><br><span class="line">        url: path,</span><br><span class="line">        dataType: &quot;xml&quot;,</span><br><span class="line">        success: function( xmlResponse ) &#123;</span><br><span class="line">            &#x2F;&#x2F; get the contents from search data</span><br><span class="line">            var datas &#x3D; $( &quot;entry&quot;, xmlResponse ).map(function() &#123;</span><br><span class="line">                return &#123;</span><br><span class="line">                    title: $( &quot;title&quot;, this ).text(),</span><br><span class="line">                    content: $(&quot;content&quot;,this).text(),</span><br><span class="line">                    url: $( &quot;url&quot; , this).text()</span><br><span class="line">                &#125;;</span><br><span class="line">            &#125;).get();</span><br><span class="line">            var $input &#x3D; document.getElementById(search_id);</span><br><span class="line">            var $resultContent &#x3D; document.getElementById(content_id);</span><br><span class="line">            $input.addEventListener(&#39;input&#39;, function()&#123;</span><br><span class="line">                var str&#x3D;&#39;&lt;ul class&#x3D;\&quot;search-result-list\&quot;&gt;&#39;;                </span><br><span class="line">                var keywords &#x3D; this.value.trim().toLowerCase().split(&#x2F;[\s\-]+&#x2F;);</span><br><span class="line">                $resultContent.innerHTML &#x3D; &quot;&quot;;</span><br><span class="line">                if (this.value.trim().length &lt;&#x3D; 0) &#123;</span><br><span class="line">                    return;</span><br><span class="line">                &#125;</span><br><span class="line">                &#x2F;&#x2F; perform local searching</span><br><span class="line">                datas.forEach(function(data) &#123;</span><br><span class="line">                    var isMatch &#x3D; true;</span><br><span class="line">                    var content_index &#x3D; [];</span><br><span class="line">                    var data_title &#x3D; data.title.trim().toLowerCase();</span><br><span class="line">                    var data_content &#x3D; data.content.trim().replace(&#x2F;&lt;[^&gt;]+&gt;&#x2F;g,&quot;&quot;).toLowerCase();</span><br><span class="line">                    var data_url &#x3D; data.url;</span><br><span class="line">                    var index_title &#x3D; -1;</span><br><span class="line">                    var index_content &#x3D; -1;</span><br><span class="line">                    var first_occur &#x3D; -1;</span><br><span class="line">                    &#x2F;&#x2F; only match artiles with not empty titles and contents</span><br><span class="line">                    if(data_title !&#x3D; &#39;&#39; &amp;&amp; data_content !&#x3D; &#39;&#39;) &#123;</span><br><span class="line">                        keywords.forEach(function(keyword, i) &#123;</span><br><span class="line">                            index_title &#x3D; data_title.indexOf(keyword);</span><br><span class="line">                            index_content &#x3D; data_content.indexOf(keyword);</span><br><span class="line">                            if( index_title &lt; 0 &amp;&amp; index_content &lt; 0 )&#123;</span><br><span class="line">                                isMatch &#x3D; false;</span><br><span class="line">                            &#125; else &#123;</span><br><span class="line">                                if (index_content &lt; 0) &#123;</span><br><span class="line">                                    index_content &#x3D; 0;</span><br><span class="line">                                &#125;</span><br><span class="line">                                if (i &#x3D;&#x3D; 0) &#123;</span><br><span class="line">                                    first_occur &#x3D; index_content;</span><br><span class="line">                                &#125;</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;);</span><br><span class="line">                    &#125;</span><br><span class="line">                    &#x2F;&#x2F; show search results</span><br><span class="line">                    if (isMatch) &#123;</span><br><span class="line">                        str +&#x3D; &quot;&lt;li&gt;&lt;a href&#x3D;&#39;&quot;+ data_url +&quot;&#39; class&#x3D;&#39;search-result-title&#39; target&#x3D;&#39;_blank&#39;&gt;&quot;+ &quot;&gt; &quot; + data_title +&quot;&lt;&#x2F;a&gt;&quot;;</span><br><span class="line">                        var content &#x3D; data.content.trim().replace(&#x2F;&lt;[^&gt;]+&gt;&#x2F;g,&quot;&quot;);</span><br><span class="line">                        if (first_occur &gt;&#x3D; 0) &#123;</span><br><span class="line">                            &#x2F;&#x2F; cut out characters</span><br><span class="line">                            var start &#x3D; first_occur - 6;</span><br><span class="line">                            var end &#x3D; first_occur + 6;</span><br><span class="line">                            if(start &lt; 0)&#123;</span><br><span class="line">                                start &#x3D; 0;</span><br><span class="line">                            &#125;</span><br><span class="line">                            if(start &#x3D;&#x3D; 0)&#123;</span><br><span class="line">                                end &#x3D; 10;</span><br><span class="line">                            &#125;</span><br><span class="line">                            if(end &gt; content.length)&#123;</span><br><span class="line">                                end &#x3D; content.length;</span><br><span class="line">                            &#125;</span><br><span class="line">                            var match_content &#x3D; content.substr(start, end); </span><br><span class="line">                            &#x2F;&#x2F; highlight all keywords</span><br><span class="line">                            keywords.forEach(function(keyword)&#123;</span><br><span class="line">                                var regS &#x3D; new RegExp(keyword, &quot;gi&quot;);</span><br><span class="line">                                match_content &#x3D; match_content.replace(regS, &quot;&lt;em class&#x3D;\&quot;search-keyword\&quot;&gt;&quot;+keyword+&quot;&lt;&#x2F;em&gt;&quot;);</span><br><span class="line">                            &#125;)</span><br><span class="line">                            str +&#x3D; &quot;&lt;p class&#x3D;\&quot;search-result\&quot;&gt;&quot; + match_content +&quot;...&lt;&#x2F;p&gt;&quot;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;)</span><br><span class="line">                $resultContent.innerHTML &#x3D; str;</span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/source的maincf68a.css末尾添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">.search &#123;</span><br><span class="line">  width: 65%;</span><br><span class="line">  height: 25px;</span><br><span class="line">  margin-top: 0px;</span><br><span class="line">  padding: 0;</span><br><span class="line">  font-family: inherit;</span><br><span class="line">  border: 2px solid transparent;</span><br><span class="line">  border-bottom: 3px solid #fff;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">  opacity: 0.8;</span><br><span class="line">  background: #708090;</span><br><span class="line">&#125;</span><br><span class="line">.search:hover &#123;</span><br><span class="line">  border: 2px solid #d3d3d3;</span><br><span class="line">  opacity: 1;</span><br><span class="line">  box-shadow: 0 0 10px rgba(0,0,0,0.3);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*搜索重置按钮*&#x2F;</span><br><span class="line">#search-form .fa-times &#123;</span><br><span class="line">  display: none;</span><br><span class="line">  padding: 1px 0.7em;</span><br><span class="line">  box-shadow: 0 0 3px rgba(0,0,0,0.15);</span><br><span class="line">  cursor: pointer;</span><br><span class="line">  color: #ff0000;</span><br><span class="line">&#125;</span><br><span class="line">#search-form .fa-times:active &#123;</span><br><span class="line">  background: #fff;</span><br><span class="line">&#125;</span><br><span class="line">#search-form .fa-times:hover &#123;</span><br><span class="line">  zoom: 1.1;</span><br><span class="line">  padding: 1px 0.6em;</span><br><span class="line">  border: 1px solid #fff;</span><br><span class="line">  box-shadow: 0 0 6px rgba(0,0,0,0.25);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*搜索结果区*&#x2F;</span><br><span class="line">#local-search-result &#123;</span><br><span class="line">  margin: auto -12% auto -6%;</span><br><span class="line">  font-size: 0.9em;</span><br><span class="line">  text-align: left;</span><br><span class="line">  word-break: break-all;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#local-search-result ul.search-result-list li:hover &#123;</span><br><span class="line">  font-weight: normal;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*单条搜索结果*&#x2F;</span><br><span class="line">#local-search-result li &#123;</span><br><span class="line">  margin: 0.5em auto;</span><br><span class="line">  border-bottom: 2px solid #d3d3d3;</span><br><span class="line">&#125;</span><br><span class="line">#local-search-result .search-result-list li:hover &#123;</span><br><span class="line">  background: rgba(158,188,226,0.21);</span><br><span class="line">  box-shadow: 0 0 5px rgba(0,0,0,0.2);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*匹配的标题*&#x2F;</span><br><span class="line">#local-search-result a.search-result-title &#123;</span><br><span class="line">  line-height: 1.2;</span><br><span class="line">  font-weight: bold;</span><br><span class="line">  color: #ff000;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*搜索预览段落*&#x2F;</span><br><span class="line">#local-search-result p.search-result &#123;</span><br><span class="line">  margin: 0.4em auto;</span><br><span class="line">  line-height: 1.2em;</span><br><span class="line">  max-height: 3.6em;</span><br><span class="line">  overflow: hidden;</span><br><span class="line">  text-align: justify;</span><br><span class="line">  color: #fff;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*匹配的关键词*&#x2F;</span><br><span class="line">#local-search-result em.search-keyword &#123;</span><br><span class="line">  color: #f58e90;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;*无匹配搜索结果时显示*&#x2F;</span><br><span class="line">p.no-result &#123;</span><br><span class="line">  display: none;</span><br><span class="line">  margin: 2em 0 2em 6%;</span><br><span class="line">  padding-bottom: 0.5em;</span><br><span class="line">  text-align: left;</span><br><span class="line">  color: #fff;</span><br><span class="line">  font-family: font-serif serif;</span><br><span class="line">  border-bottom: 2px solid #d3d3d3;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/layout/_partial下的left-col.ejs文件添加代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">		&lt;nav class&#x3D;&quot;header-smart-menu&quot;&gt;</span><br><span class="line">    		&lt;% for (var i in theme.smart_menu)&#123; %&gt;</span><br><span class="line">    			&lt;% if(theme.smart_menu[i])&#123; %&gt;</span><br><span class="line">    			&lt;a q-on&#x3D;&quot;click: openSlider(e, &#39;&lt;%-i%&gt;&#39;)&quot; href&#x3D;&quot;javascript:void(0)&quot;&gt;&lt;%&#x3D; theme.smart_menu[i] %&gt;&lt;&#x2F;a&gt;</span><br><span class="line">    			&lt;% &#125; %&gt;</span><br><span class="line">            &lt;%&#125;%&gt;</span><br><span class="line">		&lt;&#x2F;nav&gt;</span><br><span class="line">		</span><br><span class="line">&lt;!--  在上面这代码后面添加 --&gt;</span><br><span class="line"></span><br><span class="line">        &lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;https:&#x2F;&#x2F;apps.bdimg.com&#x2F;libs&#x2F;jquery&#x2F;2.1.4&#x2F;jquery.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">		&lt;form id&#x3D;&quot;search-form&quot;&gt; &lt;!-- 搜索框相关 --&gt;</span><br><span class="line">			&lt;input type&#x3D;&quot;text&quot; id&#x3D;&quot;local-search-input&quot; name&#x3D;&quot;q&quot; results&#x3D;&quot;0&quot; style&#x3D;&quot;text-align:center&quot; placeholder&#x3D;&quot;站内搜索...&quot; class&#x3D;&quot;search form-control&quot; autocomplete&#x3D;&quot;off&quot; autocorrect&#x3D;&quot;off&quot;&#x2F;&gt;</span><br><span class="line">			&lt;!-- 清空&#x2F;重置搜索框 --&gt;</span><br><span class="line">			&lt;i class&#x3D;&quot;fa fa-times&quot; onclick&#x3D;&quot;resetSearch()&quot;&gt;&lt;&#x2F;i&gt; 			</span><br><span class="line">		&lt;&#x2F;form&gt;</span><br><span class="line">		&lt;!-- 搜索结果区 --&gt;</span><br><span class="line">		&lt;div id&#x3D;&quot;local-search-result&quot;&gt;&lt;&#x2F;div&gt; </span><br><span class="line">		&lt;!-- 无匹配时显示，注意请在 CSS 中设置默认隐藏 --&gt;</span><br><span class="line">		&lt;p class&#x3D;&#39;no-result&#39;&gt;无匹配内容...&lt;&#x2F;p&gt; </span><br><span class="line">		&lt;script type&#x3D;&quot;text&#x2F;javascript&quot; src&#x3D;&quot;&#x2F;search.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">		&lt;script&gt;</span><br><span class="line">			var inputArea &#x3D; document.querySelector(&quot;#local-search-input&quot;);</span><br><span class="line">			var getSearchFile &#x3D; function()&#123;</span><br><span class="line">				var path &#x3D; &quot;&#x2F;search.xml&quot;;</span><br><span class="line">				searchFunc(path, &#39;local-search-input&#39;, &#39;local-search-result&#39;);</span><br><span class="line">			&#125;</span><br><span class="line">			inputArea.onfocus &#x3D; function()&#123; getSearchFile() </span><br><span class="line">				$resultArea.bind(&quot;DOMNodeRemoved DOMNodeInserted&quot;, function(e) &#123;</span><br><span class="line">					if (!$(e.target).text()) &#123;</span><br><span class="line">						$(&quot;.no-result&quot;).show(200);</span><br><span class="line">					&#125; else &#123;</span><br><span class="line">						$(&quot;.no-result&quot;).hide();&#125;</span><br><span class="line">					&#125;)</span><br><span class="line">			&#125;</span><br><span class="line">		&lt;&#x2F;script&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>重新清理构建项目，启动后可看到左侧出现站内查询输入框，可以进行内容查询<br><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/10.png" alt="image"></p>
+<h3 id="添加头像，赞赏二维码-1"><a href="#添加头像，赞赏二维码-1" class="headerlink" title="添加头像，赞赏二维码"></a>添加头像，赞赏二维码</h3><p>在themes/yilia/source下创建assets文件夹，assets文件夹下创建img文件夹，添加图片到img文件夹下。</p>
+<p>修改themes/yilia下的_config.yml配置文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#你的头像url</span><br><span class="line">avatar: &quot;&#x2F;assets&#x2F;img&#x2F;mnn.jpg&quot;</span><br><span class="line"></span><br><span class="line"># 打赏</span><br><span class="line"># 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏</span><br><span class="line">reward_type: 2</span><br><span class="line"># 打赏wording</span><br><span class="line">reward_wording: &#39;谢谢你请我吃糖果&#39;</span><br><span class="line"># 支付宝二维码图片地址，跟你设置头像的方式一样。比如：&#x2F;assets&#x2F;img&#x2F;alipay.jpg</span><br><span class="line">alipay:</span><br><span class="line"># 微信二维码图片地址</span><br><span class="line">weixin: &quot;&#x2F;assets&#x2F;img&#x2F;wx.png&quot;</span><br></pre></td></tr></table></figure>
+<p>重新清理构建项目，启动</p>
+<h3 id="字数统计和阅读时长"><a href="#字数统计和阅读时长" class="headerlink" title="字数统计和阅读时长"></a>字数统计和阅读时长</h3><p>在博客根路径下打开CMD窗口，执行下面命令</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i --save hexo-wordcount</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/layout/_partial/post路径下创建word.ejs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style&#x3D;&quot;margin-top:10px;&quot;&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-time&quot;&gt;</span><br><span class="line">      &lt;span class&#x3D;&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">        &lt;i class&#x3D;&quot;fa fa-keyboard-o&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-meta-item-text&quot;&gt;  字数统计: &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-count&quot;&gt;&lt;%&#x3D; wordcount(post.content) %&gt;字&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;span&gt;</span><br><span class="line">    &lt;&#x2F;span&gt;</span><br><span class="line"></span><br><span class="line">    &lt;span class&#x3D;&quot;post-time&quot;&gt;</span><br><span class="line">      &amp;nbsp; | &amp;nbsp;</span><br><span class="line">      &lt;span class&#x3D;&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">        &lt;i class&#x3D;&quot;fa fa-hourglass-half&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-meta-item-text&quot;&gt;  阅读时长: &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-count&quot;&gt;&lt;%&#x3D; min2read(post.content) %&gt;分&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;span&gt;</span><br><span class="line">    &lt;&#x2F;span&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/layout/_partial的article.ejs中添加下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;article-inner&quot;&gt;</span><br><span class="line">    &lt;% if (post.link || post.title)&#123; %&gt;</span><br><span class="line">      &lt;header class&#x3D;&quot;article-header&quot;&gt;</span><br><span class="line">        &lt;%- partial(&#39;post&#x2F;title&#39;, &#123;class_name: &#39;article-title&#39;&#125;) %&gt;</span><br><span class="line">        &lt;% if (!post.noDate)&#123; %&gt;</span><br><span class="line">        &lt;%- partial(&#39;post&#x2F;date&#39;, &#123;class_name: &#39;archive-article-date&#39;, date_format: null&#125;) %&gt;</span><br><span class="line">         &lt;!-- 需要添加的位置 --&gt;</span><br><span class="line">         &lt;!-- 开始添加字数统计--&gt;</span><br><span class="line">        &lt;% if(theme.word_count &amp;&amp; !post.no_word_count)&#123;%&gt;</span><br><span class="line">          &lt;%- partial(&#39;post&#x2F;word&#39;) %&gt;</span><br><span class="line">          &lt;% &#125; %&gt;</span><br><span class="line">          &lt;!-- 添加完成 --&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">      &lt;&#x2F;header&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia下的_config.yml中添加下面代</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#是否开启字数统计</span><br><span class="line">#不需要使用，直接设置值为false，或注释掉</span><br><span class="line">word_count: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="网站访问数量"><a href="#网站访问数量" class="headerlink" title="网站访问数量"></a>网站访问数量</h3><p>在themes/yilia的_config.yml添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#开启不算子访问统计</span><br><span class="line">busuanzi:</span><br><span class="line">  enable: true</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/layout/_partial的footer.ejs末尾<code>&lt;/footer&gt;</code>与其上面的<code>&lt;/div&gt;</code>之间放入代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if (theme.busuanzi &amp;&amp; theme.busuanzi.enable)&#123; %&gt;</span><br><span class="line">       &lt;!-- 不蒜子统计 --&gt;</span><br><span class="line">       &lt;span id&#x3D;&quot;busuanzi_container_site_pv&quot;&gt;</span><br><span class="line">               本站总访问量&lt;span id&#x3D;&quot;busuanzi_value_site_pv&quot;&gt;&lt;&#x2F;span&gt;次</span><br><span class="line">       &lt;&#x2F;span&gt;</span><br><span class="line">       &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">       &lt;span id&#x3D;&quot;busuanzi_container_site_uv&quot; style&#x3D;&#39;display:none&#39;&gt;</span><br><span class="line">               本站访客数&lt;span id&#x3D;&quot;busuanzi_value_site_uv&quot;&gt;&lt;&#x2F;span&gt;人</span><br><span class="line">       &lt;&#x2F;span&gt;</span><br><span class="line">	&lt;script async src&#x3D;&quot;&#x2F;busuanzi.ibruce.info&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line"> &lt;% &#125; %&gt;</span><br><span class="line"> </span><br><span class="line"> &lt;script async src&#x3D;&quot;&#x2F;&#x2F;busuanzi.ibruce.info&#x2F;busuanzi&#x2F;2.3&#x2F;busuanzi.pure.mini.js&quot;&gt;&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>当部署到github等上之后就可以看到访问量统计等信息</p>
+<h3 id="添加版权声明"><a href="#添加版权声明" class="headerlink" title="添加版权声明"></a>添加版权声明</h3><p>在themes/yilia/layout/_partial的article.ejs中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"> &lt;noscript&gt;Please enable JavaScript to view the &lt;a href&#x3D;&quot;https:&#x2F;&#x2F;disqus.com&#x2F;?ref_noscript&quot;&gt;comments powered by Disqus.&lt;&#x2F;a&gt;&lt;&#x2F;noscript&gt;</span><br><span class="line">  &lt;&#x2F;section&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- 开始添加代码--&gt;</span><br><span class="line">    &lt;%</span><br><span class="line">      var sUrl &#x3D; url.replace(&#x2F;index\.html$&#x2F;, &#39;&#39;);</span><br><span class="line">      sUrl &#x3D; &#x2F;^(http:|https:)\&#x2F;\&#x2F;&#x2F;.test(sUrl) ? sUrl : &#39;https:&#39; + sUrl;</span><br><span class="line">    %&gt;</span><br><span class="line">  </span><br><span class="line">    &lt;% if ((theme.declare_type &#x3D;&#x3D;&#x3D; 2 || (theme.declare_type &#x3D;&#x3D;&#x3D; 1 &amp;&amp; post.declare)) &amp;&amp; !index)&#123; %&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;declare&quot;&gt;</span><br><span class="line">        &lt;strong&gt;本文作者：&lt;&#x2F;strong&gt;</span><br><span class="line">        &lt;% if(config.author !&#x3D; undefined)&#123; %&gt;</span><br><span class="line">          &lt;%&#x3D; config.author%&gt;</span><br><span class="line">        &lt;% &#125;else&#123;%&gt;</span><br><span class="line">          &lt;font color&#x3D;&quot;#5b10b0&quot;&gt;&lt;&#x2F;font&gt;</span><br><span class="line">        &lt;%&#125;%&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;strong&gt;本文链接：&lt;&#x2F;strong&gt;</span><br><span class="line">        &lt;%&#x3D; sUrl%&gt;</span><br><span class="line">        &lt;br&gt;</span><br><span class="line">        &lt;strong&gt;版权声明：&lt;&#x2F;strong&gt;</span><br><span class="line">        本作品采用</span><br><span class="line">        &lt;a rel&#x3D;&quot;license&quot; href&#x3D;&quot;&lt;%&#x3D; theme.licensee_url%&gt;&quot;&gt;&lt;%&#x3D; theme.licensee_name%&gt;&lt;&#x2F;a&gt;</span><br><span class="line">        进行许可。转载请注明出处！</span><br><span class="line">        &lt;% if(theme.licensee_img !&#x3D; undefined)&#123; %&gt;</span><br><span class="line">          &lt;br&gt;</span><br><span class="line">          &lt;a rel&#x3D;&quot;license&quot; href&#x3D;&quot;&lt;%&#x3D; theme.licensee_url%&gt;&quot;&gt;&lt;img alt&#x3D;&quot;知识共享许可协议&quot; style&#x3D;&quot;border-width:0&quot; src&#x3D;&quot;&lt;%&#x3D; theme.licensee_img%&gt;&quot;&#x2F;&gt;&lt;&#x2F;a&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">      &lt;&#x2F;div&gt;</span><br><span class="line">    &lt;% &#125; else &#123;%&gt;</span><br><span class="line">      &lt;div class&#x3D;&quot;declare&quot; hidden&#x3D;&quot;hidden&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia的_config.yml添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">## 版权声明</span><br><span class="line">#版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明</span><br><span class="line">declare_type: 2  </span><br><span class="line"># 当前应用的版权协议地址。</span><br><span class="line">licensee_url: https:&#x2F;&#x2F;creativecommons.org&#x2F;licenses&#x2F;by-nc-sa&#x2F;4.0&#x2F;    </span><br><span class="line"># 版权协议的名称      </span><br><span class="line">licensee_name: &#39;知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议&#39;  </span><br><span class="line"># 版权协议的Logo</span><br><span class="line">licensee_img: https:&#x2F;&#x2F;i.creativecommons.org&#x2F;l&#x2F;by-nc-sa&#x2F;4.0&#x2F;88x31.png      </span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/source下的maincf68a.css末尾添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div .declare &#123;</span><br><span class="line">margin-left:60px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在根路径的_config.yml中设置url</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: http:&#x2F;&#x2F;xxx</span><br></pre></td></tr></table></figure>
+
+<h3 id="增加gitalk评论插件"><a href="#增加gitalk评论插件" class="headerlink" title="增加gitalk评论插件"></a>增加gitalk评论插件</h3><p><strong>OAuth application注册</strong></p>
+<p>首先使用之前要先注册一个账号，登录自己的github账户，点击头像–&gt;Settings–&gt;Developer settings–&gt;OAuth App–&gt;New OAuth App</p>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/11.png" alt="image"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Application name：可以随意填写</span><br><span class="line">Homepage URL：个人博客地址（域名）</span><br><span class="line">Application description：可填可不填，不是关键，若填，可填个人博客的相关描述</span><br><span class="line">Authorization callback URL：个人博客地址（域名）</span><br><span class="line">一切设置完成之后点击Register application，注册完成后，会出现两个关键信息</span><br></pre></td></tr></table></figure>
+<p>点击Register application注册完成后会出现两个关键信息，Client ID和Client Secret</p>
+<p>然后在yilia主题下的_config.yml文件中配置代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#6、配置gitalk</span><br><span class="line">gitalk:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/layout/_partial/post路径下新增gitalk.ejs</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id&#x3D;&quot;gitalk-container&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;gitalk@1&#x2F;dist&#x2F;gitalk.css&quot;&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;gitalk@1&#x2F;dist&#x2F;gitalk.min.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line">&lt;script src&#x3D;&quot;https:&#x2F;&#x2F;cdn.bootcss.com&#x2F;blueimp-md5&#x2F;2.10.0&#x2F;js&#x2F;md5.js&quot;&gt;&lt;&#x2F;script&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">var gitalk &#x3D; new Gitalk(&#123;</span><br><span class="line">  # Client ID</span><br><span class="line">  clientID: &#39;xxxxx&#39;,</span><br><span class="line">  # Client Secret</span><br><span class="line">  clientSecret: &#39;xxxxxxxxxxxxxxxxxxxxxxxx&#39;,</span><br><span class="line">  #仓库</span><br><span class="line">  repo: &#39;EagleLiDN.github.io&#39;,</span><br><span class="line">  # 账户名</span><br><span class="line">  owner: &#39;xxxxx&#39;,</span><br><span class="line">  # 账户名</span><br><span class="line">  admin: [&#39;xxxx&#39;],</span><br><span class="line">  id: md5(window.location.pathname),</span><br><span class="line">  distractionFreeMode: true</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">gitalk.render(&#39;gitalk-container&#39;)</span><br><span class="line">&lt;&#x2F;script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>修改themes/yilia/source-src/css下的comment.css文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#disqus_thread, .duoshuo, .cloud-tie-wrapper, #SOHUCS, #gitment-ctn, #gitalk-container &#123;</span><br><span class="line">    padding: 0 30px !important;</span><br><span class="line">    min-height: 20px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">#SOHUCS &#123;</span><br><span class="line">    #SOHU_MAIN .module-cmt-list .block-cont-gw &#123;</span><br><span class="line">        border-bottom: 1px dashed #c8c8c8 !important;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/layout/_partial的article.ejs文件内新增gitalk相关的配置代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;reward-box-item&quot;&gt;</span><br><span class="line">                      &lt;img class&#x3D;&quot;reward-img&quot; src&#x3D;&quot;&lt;%&#x3D; theme.weixin%&gt;&quot;&gt;</span><br><span class="line">                      &lt;span class&#x3D;&quot;reward-type&quot;&gt;微信&lt;&#x2F;span&gt;</span><br><span class="line">                    &lt;&#x2F;div&gt;</span><br><span class="line">                    &lt;% &#125; %&gt;</span><br><span class="line">                  &lt;&#x2F;div&gt;</span><br><span class="line">                &lt;&#x2F;span&gt;</span><br><span class="line">              &lt;&#x2F;span&gt;</span><br><span class="line">            &lt;&#x2F;span&gt;</span><br><span class="line">          &lt;&#x2F;div&gt;</span><br><span class="line">          &lt;&#x2F;a&gt;</span><br><span class="line">        &lt;&#x2F;div&gt;</span><br><span class="line">      &lt;% &#125; %&gt;</span><br><span class="line">    &lt;&#x2F;div&gt;</span><br><span class="line">	</span><br><span class="line">	&lt;!-- 开始添加gitalk代码 --&gt;</span><br><span class="line">	</span><br><span class="line">    &lt;% if (theme.gitalk.enable &amp;&amp;  is_post())&#123; %&gt;</span><br><span class="line">       &lt;div id&#x3D;&quot;gitalk-container&quot;&gt;&lt;&#x2F;div&gt;</span><br><span class="line">       &lt;%- include post&#x2F;gitalk.ejs %&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在themes/yilia/source下的maincf68a.css末尾添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">div #gitalk-container&#123;</span><br><span class="line">	padding: 0 90px 0 60px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="搜索引擎"><a href="#搜索引擎" class="headerlink" title="搜索引擎"></a>搜索引擎</h3><p>在 Hexo 根目录打开命令行工具，执行以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>查看根目录下的public文件夹，可以看到 sitmap.xml文件</p>
+<p>sitemap 的初衷是给搜索引擎看的</p>
+<p>为了提高搜索引擎对自己站点的收录效果，我们最好手动到 google 和百度等搜索引擎提交sitemap.xml</p>
+<p><img src="https://nealli.gitee.io/pictures/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/12.png" alt="image"></p>
 
       
 
@@ -259,6 +376,11 @@
                   <div class="reward-box">
                     
                     
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/weixin.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
                   </div>
                 </span>
               </span>
@@ -268,64 +390,72 @@
         </div>
       
     </div>
+	
+		
+       <div id="gitalk-container"></div>
+       <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+
+<script>
+var gitalk = new Gitalk({
+  clientID: 'e814daed0375def26198',
+  clientSecret: '5977c992971cedd454876bd8ab6cb3e1785ab378',
+  repo: 'EagleLiDN.github.io',
+  owner: 'EagleLiDN',
+  admin: ['EagleLiDN'],
+  id: md5(window.location.pathname),
+  distractionFreeMode: true
+})
+
+gitalk.render('gitalk-container')
+</script>
+
+      
+	  
+
+  
+
+      <!-- 开始添加代码-->
+      
+    
+      
+        <div class="declare">
+          <strong>本文作者：</strong>
+          
+            LiQiuYu
+          
+          <br>
+          <strong>本文链接：</strong>
+          http://nealli.gitee.io/2021/04/21/hexo%E6%90%AD%E5%BB%BA%E5%92%8Cyilia%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE/
+          <br>
+          <strong>版权声明：</strong>
+          本作品采用
+          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+          进行许可。转载请注明出处！
+          
+        </div>
+      
+	
     <div class="article-info article-info-index">
       
       
-      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hexo博客</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
       
 
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/01/hello-world/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
@@ -358,54 +488,11 @@
 
   
 
-  
 
-      <!-- 开始添加代码-->
-      
-      <!--添加代码开始-->
-      
-        <div class="declare">
-          <strong>本文作者：</strong>
-          
-            John Doe
-          
-          <br>
-          <strong>本文链接：</strong>
-          http://example.com/2021/04/01/hello-world/
-          <br>
-          <strong>版权声明：</strong>
-          本作品采用
-          <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-          进行许可。转载请注明出处！
-          
-            <br>
-            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
-          
-        </div>
-      
       
 	  
 	  
-       <div id="gitalk-container"></div>
-       <div id="gitalk-container"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
-
-<script>
-var gitalk = new Gitalk({
-  clientID: '',
-  clientSecret: '',
-  repo: 'mengnn.github.io',
-  owner: 'mengnn',
-  admin: ['mengnn'],
-  id: md5(window.location.pathname),
-  distractionFreeMode: true
-})
-
-gitalk.render('gitalk-container')
-</script>
-      
+	  
   
   
 
@@ -417,7 +504,7 @@ gitalk.render('gitalk-container')
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 John Doe
+    		&copy; 2021 LiQiuYu
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
@@ -512,6 +599,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">hexo博客</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -562,27 +653,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="https://midkuro.gitee.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>好友蔡工博客</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
+              <a href="https://trainoo.gitee.io/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>好友周工博客</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="https://tech.meituan.com/archives" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>美团技术团队</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzkzNTEwOTAxMA==&scene=124&uin=&key=&devicetype=Windows+10+x64&version=63020170&lang=zh_CN&a8scene=7&fontgear=2" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>艾小仙公众号</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
+              <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MjM5ODYxMDA5OQ==&scene=124&uin=&key=&devicetype=Windows+10+x64&version=63020170&lang=zh_CN&a8scene=7&fontgear=2" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>架构师之路公众号</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU2NTYyOTQ4OQ==&scene=124&uin=&key=&devicetype=Windows+10+x64&version=63020170&lang=zh_CN&a8scene=7&fontgear=2" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>码农的荒岛求生</a>
             </li>
           
         </ul>
@@ -593,7 +684,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">keep running,keep learning</div>
   	  	
     	</section>
     

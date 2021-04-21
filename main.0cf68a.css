@@ -91,5 +91,9 @@ p.no-result {
 }
 
 div .declare {
-margin-left:27px;
+margin-left:60px;
+}
+
+div #gitalk-container{
+	padding: 0 90px 0 60px;
 }
